@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Password Generator</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <form id="personal_form">
+
+                <input type="text" class="gen-pass" readonly value="">
+
+                <div class="input-length">
+                    <label for="password-length">Password Length</label>
+                    <input type="number" name="password-length" id="password-length">
+                </div>
+
+                <div class="input-upper">
+                    <label for="uppercase">Include Uppercase</label>
+                    <input type="checkbox" name="uppercase" id="uppercase">
+                </div>
+
+                <div class="input-lower">
+                    <label for="lowercase">Include Lowercase</label>
+                    <input type="checkbox" name="lowercase" id="lowercase">
+                </div>
+
+                <div class="input-numbers">
+                    <label for="numbers">Include Numbers</label>
+                    <input type="checkbox" name="numbers" id="numbers">
+                </div>
+
+                <input type="submit" class="b-submmit" value="Generate Password">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
