@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./index.css">
     <title>Password Generator</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -14,34 +16,32 @@
         </nav>
     </header>
     <main>
-        <div class="card">
-            <form id="personal_form">
-
-                <input type="text" class="gen-pass" readonly value="">
-
-                <div class="input-length">
-                    <label for="password-length">Password Length</label>
-                    <input type="number" name="password-length" id="password-length">
-                </div>
-
-                <div class="input-upper">
-                    <label for="uppercase">Include Uppercase</label>
-                    <input type="checkbox" name="uppercase" id="uppercase">
-                </div>
-
-                <div class="input-lower">
-                    <label for="lowercase">Include Lowercase</label>
-                    <input type="checkbox" name="lowercase" id="lowercase">
-                </div>
-
-                <div class="input-numbers">
-                    <label for="numbers">Include Numbers</label>
-                    <input type="checkbox" name="numbers" id="numbers">
-                </div>
-
-                <input type="submit" class="b-submmit" value="Generate Password">
-            </form>
+        <div class="container">
+            <input type="text" id="password">
+            <div class="input-control">
+                <label for="password-length">Password Length</label>
+                <input type="number" name="password-length" id="password-length" value="5">
+            </div>
+            <div class="input-control">
+                <label for="uppercase">Include Uppercase</label>
+                <input type="checkbox" name="uppercase" id="uppercase">
+            </div>
+            <div class="input-control">
+                <label for="lowercase">Include Lowercase</label>
+                <input type="checkbox" name="lowercase" id="lowercase">
+            </div>
+            <div class="input-control">
+                <label for="numbers">Include Numbers</label>
+                <input type="checkbox" name="numbers" id="numbers">
+            </div>
+            <div class="input-control">
+                <label for="symbols">Include Symbols</label>
+                <input type="checkbox" name="symbols" id="symbols">
+            </div>
+            <button id='button-submit'>Generate Password</button>
         </div>
     </main>
+    <script src="./index.js"></script>
 </body>
+
 </html>

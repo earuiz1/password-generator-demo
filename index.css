@@ -31,8 +31,9 @@ body{
     min-height: 100vh;
 }
 
-.card{
-    display: block;
+.container{
+    display: flex;
+    flex-direction: column;
     background-color:aliceblue;
     width: 100%;
     min-width: 300px;
@@ -41,46 +42,12 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-#personal_form{
-    display: flex;
-    flex-direction:column;
-}
-
-#personal_form .gen-pass{
-    display: flex;
-    flex-direction: row;
-    padding: 30px 0;
-    margin-bottom: 20px;
-}
-
-#personal_form .input-length{
+.input-control{
     display: flex;
     flex-direction: row;
     padding: 10px 0;
     border-bottom: 2px solid #013a63;
-}
-
-#personal_form .input-upper{
-    display: flex;
-    flex-direction: row;
-    padding: 10px 0;
-    border-bottom: 2px solid #013a63;
-    align-items: center;
-}
-
-#personal_form .input-lower{
-    display: flex;
-    flex-direction: row;
-    padding: 10px 0;
-    border-bottom: 2px solid #013a63;
-    align-items: center;
-}
-
-#personal_form .input-numbers{
-    display: flex;
-    flex-direction: row;
-    padding: 10px 0;
-    border-bottom: 2px solid #013a63;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -89,28 +56,18 @@ label{
     font-weight: 500;
 }
 
+#password{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    margin-bottom: 20px;
+}
+
 input#password-length{
     width: 25%;
-    margin-left: auto;
 }
 
-
-input#uppercase{
-    margin-left: auto;
-}
-
-
-input#lowercase{
-    margin-left: auto;
-}
-
-
-input#numbers{
-    margin-left: auto;
-
-}
-
-#personal_form .b-submmit{
+#button-submit{
     padding: 10px;
     margin-top: 25px;
     border-radius: 8px;
@@ -123,11 +80,9 @@ input#numbers{
     cursor: pointer;
 }
 
-#personal_form .b-submmit:hover{
+#button-submit:hover{
     border: 2px solid #013a63;
     background-color: #013a63;
     transform: translateY(-5px);
     transition: 0.1s;
 }
-
-
