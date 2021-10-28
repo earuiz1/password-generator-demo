@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 
-
 nav{
     display: flex;
     background-color: aliceblue;
@@ -15,7 +14,6 @@ nav{
     top:0;
     left: 0;
 }
-
 
 nav h1{
     font-family: 'Courier New', Courier, monospace;
@@ -65,6 +63,12 @@ label{
 
 input#password-length{
     width: 25%;
+}
+
+input#password{
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
 }
 
 #button-submit{
