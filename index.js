@@ -7,6 +7,7 @@ const lowerCase = document.querySelector('#lowercase');
 const number = document.querySelector('#numbers');
 const symbol = document.querySelector('#symbols');
 const password = document.querySelector('#password');
+const copyButton = document.querySelector('#copy-text');
 
 //Create a function to get a random lowercase letter 
 function getRandomLower() {
@@ -69,7 +70,6 @@ function generateItems() {
     return items[Math.floor(Math.random() * items.length)];
 }
 
-
 //Create a function to generate random password
 function generatePassword() {
     let len = length.value;
@@ -80,6 +80,19 @@ function generatePassword() {
     }
 
     password.value = pass;
+}
+
+//Create a function to copy the password to the clipboard once the button copy is clicked
+function copyPassword(params) {
+    let cp = password;
+
+    /* Select the text field */
+    cp.select();
+    cp.setSelectionRange(0, 99999); /* For mobile devices */
+
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(cp.value);
+    
 }
 
 //Check when the button was clicked
