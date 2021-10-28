@@ -61,6 +61,11 @@ function generateItems() {
         items.push(getRandomSymbol());
     }
 
+    //If the length of the array is empty (No checkboxes were clicked)
+    if(items.length === 0){
+        return '';
+    }
+
     return items[Math.floor(Math.random() * items.length)];
 }
 
